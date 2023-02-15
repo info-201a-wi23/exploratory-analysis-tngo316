@@ -9,11 +9,14 @@ Give your project a concise, interesting title that summarizes the entirety of y
 
 ### Authors
 
-Names of your team members
+Tony Ngo
+Tyler Pham
+Jasmine Pham
+Senudi Siriwardhana
 
 ### Date
 
-Winter 2022
+Winter 2023
 
 ### Abstract
 
@@ -21,8 +24,7 @@ No more than three sentences that summarize your project. Focus on the very most
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Keywords: Mental Health, Education Systems, Switzerland Students
 
 ### Introduction  
 
