@@ -1,13 +1,7 @@
 
-
-
-
-x_values <- seq(1, 3)
-y_values <- seq(1,3)
-
 library(ggplot2)
 library(scales)
-library("RColorBrewer")
+
 
 dataset<- read.csv ("/Users/jasminetran/Desktop/INFO201/final\ project/exploratory-analysis-tngo316/Data\ Carrard\ et\ al.\ 2022\ MedTeach.csv", stringsAsFactors = FALSE)
 custom_colors <- c("#0000FF", "#FF69B4", "#3CB043")
