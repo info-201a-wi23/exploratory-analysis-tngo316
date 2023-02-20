@@ -109,7 +109,7 @@ label_names <- c("Male", "Female", "Non-Binary")
     scale_color_manual(labels= label_names, values = custom_colors)
   
   
-I choose this chart because it represents the what people had scored on both the Academic Efficiency and Cynical MBI with the the gender that they identify with as well. It would be able to show if there is a correlation between the two MBI tests and gender. 
+I choose this chart because it represents both what people had scored on both the Academic Efficiency and Cynical MBI with the the gender that they identify with. Therefore would be able to show if there is a correlation between the two MBI tests and gender. 
 
 ### Chart 3
 
