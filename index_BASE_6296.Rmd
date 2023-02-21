@@ -10,7 +10,8 @@ library(dplyr)
 library(ggplot2)
 library(readr)
 
-data <- read.csv("Data Carrard et al. 2022 MedTeach.csv", stringsAsFactors = FALSE) 
+# load states dataframe into variable `covid` and filter for most recent data
+data <- read.csv("/Users/tonyngo/Desktop/Data_Carrard_et_al._ 2022_MedTeach.csv", stringsAsFactors = FALSE) 
 
 # source all R files
 source('chart1.R')
@@ -106,7 +107,7 @@ knitr::kable(agg_table,
                            'MBI Cynicism',
                            'MBI Academic Efficacy'),
              caption = table_caption)
-``````
+```
 
 This aggregate table shows the top 10 scores that ranked the highest on each of the MBI test. This shows students that were dissatified with their health and received high scores on the burnout scale. This is important because it shows us the absolute of one end of the spectrum that being students that are "exteremely" burnt out.
 
@@ -115,7 +116,7 @@ This aggregate table shows the top 10 scores that ranked the highest on each of 
 ``````{r, echo = FALSE, code = readLines("chart1.R")}
 chart_caption <- paste("MBI Burnout Amongst Medical Students")
 chart1
-``````
+```
 
 I chose this chart because it shows which year of students scored the highest on the MBI(Maslach Burnout Inventory) emotional exhaustion scale. As shown, students in their first year of medical school scored the highest on the MBI evaluation. To add context,
 the Maslach Burnout Inventory is regarded as the "gold standard" for measuring burnout, on all 3 scales of emotional exhaustion, depersonalization, and personal accomplishment. The scoring scale starts at 0-16 which is considered low, 17-26 is considered moderate, and anything over a score of 27 is considered high. The bar chart is important to our understanding because the sum of MBI scores is highest with students in their first year indicating that their first year has already taken a significant toll of feeling burnt out.
@@ -127,17 +128,12 @@ the Maslach Burnout Inventory is regarded as the "gold standard" for measuring b
 ``````{r, echo = FALSE, code = readLines("chart2.R")}
 chart_caption <- paste("Academic Efficiency & Cynical MBI Amongst Genders")
 chart2
-``````
+
   
 I choose this chart because it represents both what people had scored on both the Academic Efficiency and Cynical MBI with the the gender that they identify with. The chart allows people to see if there is any relatioinship or correlation between the topics. As there is many stigmas against women in STEM careers regarding their intellect, it is interesting to see how they score on the academic effciency MBI score compared to their male collegues. By also including the cynical score, we are able to see if there is any correlation between the two different MBI tests.
 
-
-
 ### Chart 3
 
-``````{r, echo = FALSE, code = readLines("chart3.R")}
-chart_caption <- paste("Study Hours Pertaining to Age")
-chart3
-``````
+Include a chart
 
-I chose this chart because it helps to gain a visual understanding of what ages study the most. Its important to see how study hours affects students, and when comparing bachelors degrees to masters and phd students ages of students differ. From personal experience, I have seen and heard how first year college students struggle the most, especially because they are so young. I wanted to make a chart to show the correlation between age and study hours to further analyze how study hours may be decreased with age, and use that to then analyze mental health. 
+Describe why you chose this chart and what information it reveals

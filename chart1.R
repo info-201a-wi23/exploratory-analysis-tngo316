@@ -7,3 +7,4 @@ chart1 <- ggplot(data = datafile) +
   geom_col(aes(x= year , y = mbi_ex, fill = year)) +
   labs(x = "School Year", y = "Total MBI Emotional Score")
 
+

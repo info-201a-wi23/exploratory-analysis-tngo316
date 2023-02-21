@@ -3,14 +3,15 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 # load necessary ALL libraries
 library(dplyr)
 library(ggplot2)
 library(readr)
 
-data <- read.csv("Data Carrard et al. 2022 MedTeach.csv", stringsAsFactors = FALSE) 
+# load states dataframe into variable `covid` and filter for most recent data
+data <- read.csv("Data Carrard et al. 2022 MedTeach.csv", stringsAsFactors = FALSE)
 
 # source all R files
 source('chart1.R')
@@ -92,7 +93,7 @@ As we are discussing the topic of mental health, there is a certain stigma when 
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+For our mental health project, we chose to analyze students age, year, study hours, masloc burnout exhaustion levels and academic efficiency. We wanted to analyze these specific valuables to better understand the correlation of study hours along with age, and year to mental health pertaining to exhaustion and how that affects their efficiency in school. With our results we can understand that the maximum number of study hours comes from people aged 18-24, and minimum number of study hours was from people aged 30 onwards. We can also see high levels of mental exhaustion in people from "year 1" which can be correlated to both age and study hours as year 1 pertains to Bachelors level students. The max numbers of mental exhaustion, MBI cynicism, and academic efficiency was 26,23, and 29 respectively. This is a topic that we can personally relate to as college students, and is helpful to analyze to show how tutors, or help on a larger scale can be applied to reduce negative mental health effects on college students. 
 
 ### Table
 ``````{r, echo = FALSE, readLines("agg_table.R")}
@@ -129,9 +130,7 @@ chart_caption <- paste("Academic Efficiency & Cynical MBI Amongst Genders")
 chart2
 ``````
   
-I choose this chart because it represents both what people had scored on both the Academic Efficiency and Cynical MBI with the the gender that they identify with. The chart allows people to see if there is any relatioinship or correlation between the topics. As there is many stigmas against women in STEM careers regarding their intellect, it is interesting to see how they score on the academic effciency MBI score compared to their male collegues. By also including the cynical score, we are able to see if there is any correlation between the two different MBI tests.
-
-
+I chose this chart because it represents both what people had scored on both the Academic Efficiency and Cynical MBI with the the gender that they identify with. The chart allows people to see if there is any relatioinship or correlation between the topics. As there is many stigmas against women in STEM careers regarding their intellect, it is interesting to see how they score on the academic effciency MBI score compared to their male collegues. By also including the cynical score, we are able to see if there is any correlation between the two different MBI tests.
 
 ### Chart 3
 

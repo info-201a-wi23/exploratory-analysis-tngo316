@@ -124,7 +124,8 @@ the Maslach Burnout Inventory is regarded as the "gold standard" for measuring b
 ### Chart 2
 
 
-``````{r, echo = FALSE, code = readLines("chart2.R")}
+``````
+{r, echo = FALSE, code = readLines("chart2.R")}
 chart_caption <- paste("Academic Efficiency & Cynical MBI Amongst Genders")
 chart2
 ``````
@@ -135,9 +136,6 @@ I choose this chart because it represents both what people had scored on both th
 
 ### Chart 3
 
-``````{r, echo = FALSE, code = readLines("chart3.R")}
-chart_caption <- paste("Study Hours Pertaining to Age")
-chart3
-``````
+Include a chart
 
-I chose this chart because it helps to gain a visual understanding of what ages study the most. Its important to see how study hours affects students, and when comparing bachelors degrees to masters and phd students ages of students differ. From personal experience, I have seen and heard how first year college students struggle the most, especially because they are so young. I wanted to make a chart to show the correlation between age and study hours to further analyze how study hours may be decreased with age, and use that to then analyze mental health. 
+Describe why you chose this chart and what information it reveals
