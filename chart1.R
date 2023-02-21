@@ -1,7 +1,7 @@
-x_values <- seq(1, 3)
-y_values <- seq(1,3)
-
 library(ggplot2)
-ggplot() +
-  geom_point(aes(x=x_values, y = y_values))
+library(dplyr)
+
+chart1 <- ggplot(data = Data_Carrard_et_al_2022_MedTeach) +
+  geom_col(aes(x= year , y = mbi_ex, fill = year)) +
+  labs(x = "School Year", y = "Total MBI Emotional Score")
 
