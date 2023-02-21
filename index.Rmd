@@ -2,7 +2,23 @@
 title: "Exploratory Analysis"
 output: html_document
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
+# load necessary ALL libraries
+library(dplyr)
+library(ggplot2)
+library(readr)
+
+# load states dataframe into variable `covid` and filter for most recent data
+data <- read.csv("/Users/tonyngo/Desktop/Data_Carrard_et_al._ 2022_MedTeach.csv", stringsAsFactors = FALSE) 
+
+# source all R files
+source('chart1.R')
+source('chart2.R')
+source('chart3.R')
+source('agg_table.R')
+```
 ## Project title
 
 The School Experience and its Effect on Mental Well-Being
@@ -81,20 +97,18 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 ### Table
 
-Include a table of aggregate information
-
-Describe why you included the table and what information it reveals
+This aggregate table shows the top 10 scores that ranked the highest on each of the MBI test. This shows students that were dissatified with their health and received high scores on the burnout scale. This is important because it shows us the absolute of one end of the spectrum that being students that are "exteremely" burnt out.
 
 ### Chart 1
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, code = readLines("chart1.R")}
+chart_caption <- paste("MBI Burnout Amongst Medical Students")
+chart1
 ```
+
+I chose this chart because it shows which year of students scored the highest on the MBI(Maslach Burnout Inventory) emotional exhaustion scale. As shown, students in their first year of medical school scored the highest on the MBI evaluation. To add context,
+the Maslach Burnout Inventory is regarded as the "gold standard" for measuring burnout, on all 3 scales of emotional exhaustion, depersonalization, and personal accomplishment. The scoring scale starts at 0-16 which is considered low, 17-26 is considered moderate, and anything over a score of 27 is considered high. The bar chart is important to our understanding because the sum of MBI scores is highest with students in their first year indicating that their first year has already taken a significant toll of feeling burnt out.
+
 
 ### Chart 2
 
@@ -109,7 +123,7 @@ label_names <- c("Male", "Female", "Non-Binary")
     scale_color_manual(labels= label_names, values = custom_colors)
   
   
-I choose this chart because it represents the what people had scored on both the Academic Efficiency and Cynical MBI with the the gender that they identify with as well. It would be able to show if there is a correlation between the two MBI tests and gender. 
+I choose this chart because it represents both what people had scored on both the Academic Efficiency and Cynical MBI with the the gender that they identify with. Therefore would be able to show if there is a correlation between the two MBI tests and gender. 
 
 ### Chart 3
 
