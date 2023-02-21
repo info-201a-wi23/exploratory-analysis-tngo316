@@ -96,6 +96,18 @@ As we are discussing the topic of mental health, there is a certain stigma when 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
 ### Table
+``````{r, echo = FALSE, readLines("agg_table.R")}
+agg_table
+
+table_caption <- paste("Students Highest Scores")
+
+knitr::kable(agg_table,
+             col.names = c('Health',
+                           'MBI Exhaustion',
+                           'MBI Cynicism',
+                           'MBI Academic Efficacy'),
+             caption = table_caption)
+```
 
 This aggregate table shows the top 10 scores that ranked the highest on each of the MBI test. This shows students that were dissatified with their health and received high scores on the burnout scale. This is important because it shows us the absolute of one end of the spectrum that being students that are "exteremely" burnt out.
 
