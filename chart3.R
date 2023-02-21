@@ -6,11 +6,11 @@ age_stud <- mental_health_data %>% group_by(age) %>% summarize(study_hours = sum
 
 ggplot(age_stud) +
 geom_line(mapping = aes(x = age , y = study_hours)) +
-  labs(title = "Age Related to Study Hours", 
+  labs(title = "Correlation Between Age and Study Hours", 
        x = "Age", 
        y = "Study Hours") +
 geom_point(mapping = aes(x = age , y = study_hours, color = "red")) +
-  labs(title = "Age Related to Study Hours", 
+  labs(title = "Correlation Between Age and Study Hours", 
        x = "Age", 
        y = "Study Hours")
 
