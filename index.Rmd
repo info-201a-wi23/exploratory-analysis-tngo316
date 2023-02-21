@@ -125,17 +125,12 @@ the Maslach Burnout Inventory is regarded as the "gold standard" for measuring b
 ### Chart 2
 
 
-dataset<- read.csv ("/Users/jasminetran/Desktop/INFO201/final\ project/exploratory-analysis-tngo316/Data\ Carrard\ et\ al.\ 2022\ MedTeach.csv", stringsAsFactors = FALSE)
-custom_colors <- c("#0000FF", "#FF69B4", "#3CB043")
-label_names <- c("Male", "Female", "Non-Binary")
+``````{r, echo = FALSE, code = readLines("chart2.R")}
+chart_caption <- paste("Academic Efficiency & Cynical MBI Amongst Genders")
+chart2
+
   
-  ggplot(data = dataset) +
-  geom_point(mapping = aes(x=mbi_ea, y = mbi_cy, color = factor(sex), alpha=I(0.5))) +
-    labs(title = "Academic Efficiency & Cynical MBI Score", x = "Acadmeic Effciency MBI Score", y = "Cynical MBI Score", color = "Gender") +
-    scale_color_manual(labels= label_names, values = custom_colors)
-  
-  
-I choose this chart because it represents both what people had scored on both the Academic Efficiency and Cynical MBI with the the gender that they identify with. Therefore would be able to show if there is a correlation between the two MBI tests and gender. 
+I choose this chart because it represents both what people had scored on both the Academic Efficiency and Cynical MBI with the the gender that they identify with. The chart allows people to see if there is any relatioinship or correlation between the topics. As there is many stigmas against women in STEM careers regarding their intellect, it is interesting to see how they score on the academic effciency MBI score compared to their male collegues. By also including the cynical score, we are able to see if there is any correlation between the two different MBI tests.
 
 ### Chart 3
 
