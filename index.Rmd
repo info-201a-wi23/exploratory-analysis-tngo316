@@ -2,7 +2,23 @@
 title: "Exploratory Analysis"
 output: html_document
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
+# load necessary ALL libraries
+library(dplyr)
+library(ggplot2)
+library(readr)
+
+# load states dataframe into variable `covid` and filter for most recent data
+data <- read.csv("/Users/tonyngo/Desktop/Data_Carrard_et_al._ 2022_MedTeach.csv", stringsAsFactors = FALSE) 
+
+# source all R files
+source('chart1.R')
+source('chart2.R')
+source('chart3.R')
+source('agg_table.R')
+```
 ## Project title
 
 The School Experience and its Effect on Mental Well-Being
