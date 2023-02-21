@@ -1,10 +1,6 @@
 
 library(ggplot2)
 library(scales)
-<<<<<<< HEAD:chart2.R
-=======
-
->>>>>>> 9eb585a776134e7011f5aacaa20a530d9bdfe796:chart2.r
 
 dataset<- read.csv ("Data Carrard et al. 2022 MedTeach.csv", stringsAsFactors = FALSE)
 custom_colors <- c("#0000FF", "#FF69B4", "#3CB043")
