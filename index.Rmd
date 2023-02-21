@@ -97,9 +97,7 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 ### Table
 
-Include a table of aggregate information
-
-Describe why you included the table and what information it reveals
+This aggregate table shows the top 10 scores that ranked the highest on each of the MBI test. This shows students that were dissatified with their health and received high scores on the burnout scale. This is important because it shows us the absolute of one end of the spectrum that being students that are "exteremely" burnt out.
 
 ### Chart 1
 
