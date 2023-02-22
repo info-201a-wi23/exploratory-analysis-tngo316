@@ -112,7 +112,7 @@ This aggregate table shows the top 10 scores that ranked the highest on each of 
 
 ### Chart 1
 
-``````{r, echo = FALSE, code = readLines("chart1.R")}
+``````{r, echo = TRUE, code = readLines("chart1.R")}
 chart_caption <- paste("MBI Burnout Amongst Medical Students")
 chart1
 ``````
@@ -124,7 +124,7 @@ the Maslach Burnout Inventory is regarded as the "gold standard" for measuring b
 ### Chart 2
 
 
-``````{r, echo = FALSE, code = readLines("chart2.R")}
+``````{r, echo = TRUE, code = readLines("chart2.R")}
 chart_caption <- paste("Academic Efficiency & Cynical MBI Amongst Genders")
 chart2
 ``````
@@ -135,7 +135,7 @@ I choose this chart because it represents both what people had scored on both th
 
 ### Chart 3
 
-``````{r, echo = FALSE, code = readLines("chart3.R")}
+``````{r, echo = TRUE, code = readLines("chart3.R")}
 chart_caption <- paste("Study Hours Pertaining to Age")
 chart3
 ``````
